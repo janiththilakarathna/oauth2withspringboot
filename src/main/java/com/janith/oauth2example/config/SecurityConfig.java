@@ -1,5 +1,12 @@
 package com.janith.oauth2example.config;
 
+import com.janith.oauth2example.security.CustomUserDetailsService;
+import com.janith.oauth2example.security.RestAuthenticationEntryPoint;
+import com.janith.oauth2example.security.TokenAuthenticationFilter;
+import com.janith.oauth2example.security.oauth2.CustomOAuth2UserService;
+import com.janith.oauth2example.security.oauth2.HttpCookieOAuth2AuthorizationRequestRepository;
+import com.janith.oauth2example.security.oauth2.OAuth2AuthenticationSuccessHandler;
+import com.janith.oauth2example.security.oauth2.OAuth2AuthenticationFailureHandler;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

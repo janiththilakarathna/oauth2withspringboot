@@ -6,7 +6,5 @@ package com.janith.oauth2example.model;
 
 public enum AuthProvider {
     local,
-    facebook,
-    google,
     github
 }

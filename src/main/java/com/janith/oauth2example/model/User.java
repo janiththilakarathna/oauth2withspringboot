@@ -1,11 +1,11 @@
 package com.janith.oauth2example.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.Data;
 
 import javax.persistence.*;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
-import java.security.AuthProvider;
 
 /**
  * Created by Janith Thilakarathna on 12/13/18
@@ -15,6 +15,7 @@ import java.security.AuthProvider;
 @Table(name = "users", uniqueConstraints = {
         @UniqueConstraint(columnNames = "email")
 })
+@Data
 public class User {
 
     @Id
